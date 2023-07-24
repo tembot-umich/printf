@@ -47,7 +47,7 @@ int print_pointer(va_list types, char buffer[],
 
 	ind++;
 
-	/*return (write(1, &buffer[i], BUFF_SIZE - i - 1));*/
+	/*return (write(1, &buffer[k], BUFF_SIZE - k - 1));*/
 	return (write_pointer(buffer, ind, length,
 		width, flags, padd, extra_c, padd_start));
 }
@@ -126,7 +126,7 @@ int print_reverse(va_list types, char buffer[],
 	for (k = 0; str[k]; k++)
 		;
 
-	for (i = k - 1; k >= 0; k--)
+	for (k = k - 1; k >= 0; k--)
 	{
 		char z = str[k];
 
