@@ -1,44 +1,22 @@
 #include "main.h"
-
 /**
- * get_precision - Calculates precision for printing
- * @format: Formatted string in which to print the arguments
- * @i: List of arguments to be printed.
- * @list: list of arguments.
- *
- * Return: Precision.
+ * get_size - To cast arguments size
+ * @format: string to output arguments
+ * @i: arguments to print
+ * Return: size
  */
-int get_precision(const char *format, int *k, va_list list)
+int get_size(const char *format, int *i)
 {
-	int curr_k = *k + 1;
-	int precision = -1;
+	int curr_i = *i + 1;
+	int size = 0;
 
-	if (format[curr_k] != '.')
-		return (precision);
-
-	precision = 0;
-
-	for (curr_k += 1; format[curr_k] != '\0'; curr_k++)
-	{
-		if (is_digit(format[curr_k]))
-		{
-			precision *= 10;
-			precision += format[curr_k] - '0';
-		}
-		else if (format[curr_k] == '*')
-		{
-			curr_k++;
-			precision = va_arg(list, int);
-			break;
-		}
-		else
-			break;
-	}
-
-	*k = curr_k - 1;
-
-	return (precision);
+	if (format[curr_i] == 'l')
+		size = S_LONG;
+	else if (format[curr_i] == 'h')
+		size = S_SHORT;
+	if (size == 0)
+		*i = curr_i - 1;
+	else
+		*i = curr_i;
+	return (size);
 }
-
-
-
