@@ -5,6 +5,7 @@
  * @format: its the formatted string in which to print the arguments.
  * @i: its the list of arguments to be printed.
  * @list: its the list of arguments.
+ * @list: its the  list of arguments.
  * Return: width.
  */
 int get_width(const char *format, int *i, va_list list)
