@@ -4,6 +4,7 @@
  * get_width - it calculates the width for printing
  * @format: its the formatted string in which to print the arguments.
  * @i: its the list of arguments to be printed.
+ * @list: its the list of arguments.
  * @list: its the  list of arguments.
  * Return: width.
  */
@@ -27,7 +28,6 @@ break;
 else
 break;
 }
-
 *i = curr_i - 1;
 return (width);
 }

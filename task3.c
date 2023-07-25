@@ -52,6 +52,13 @@ int print_pointer(va_list types, char buffer[],
 		width, flags, padd, extra_c, padd_start));
 }
 
+/* Function declaration for is_printable */
+int is_printable(char c);
+
+/* Function declaration for write_pointer */
+int write_pointer(char buffer[], int ind, int length,
+                  int width, int flags, char padd, char extra_c, int padd_start);
+
 /************************* PRINT NON PRINTABLE *************************/
 /**
  * print_non_printable - writes ascii codes in hexa of non printable chars
