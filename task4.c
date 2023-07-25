@@ -9,8 +9,8 @@
 int get_flags(const char *format, int *k)
 {
     /* - + 0 # ' ' */
-    /* 1 2 4 8  16 */
-    int m, curr_i;
+    /* 1 2 4 8 12 16 */
+    int m, curr_k;
     int flags = 0;
     const char FLAGS_CH[] = { '-', '+', '0', '#', ' ', '\0' };
     const int FLAGS_ARR[] = { F_MINUS, F_PLUS, F_ZERO, F_HASH, F_SPACE, 0 };
