@@ -1,13 +1,13 @@
 #include "main.h"
 /**
  * print_unsigned - writes an unsigned number
- * @types: Arguments list
+ * @types: it's the arguments list
  * @buffer: Buffer array for output handling
- * @flags: Active flags
- * @width: Width specifier
+ * @flags: this are active flags
+ * @width: it's the width specifier
  * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of characters printed.
+ * @size: it's the size specifier
+ * Return: the number of characters printed.
  */
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
