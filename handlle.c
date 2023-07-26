@@ -5,11 +5,11 @@
  * @list: List of arguments to be outputted.
  * @ind: index to track current position in 'fmt' string
  * @buffer: Buffer array to handle print.
- * @flags: specifies active flags for formatting
- * @width: width specification for formatting
- * @precision: Precision specification for formatting
- * @size: Size specifier for formatting
- * Return: number of characters printed on success,
+ * @flags: it specifies active flags for formatting
+ * @width: it's width specification for formatting
+ * @precision: it's the ptecision specification for formatting
+ * @size: it's the size specifier for formatting
+ * Return: it's the number of characters printed on success,
  * -1 on failure
  */
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
