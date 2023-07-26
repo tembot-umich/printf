@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * is_printable - checks if character is printable
- * @c: character to evaluate
+ * is_printable - it checks if character is printable
+ * @c: the character to evaluate
  * Return: 1 if c is printable, 0 otherwise
  */
 int is_printable(char c)
@@ -12,9 +12,9 @@ int is_printable(char c)
 }
 /**
  * append_hexa_code - append ASCII in hexadecimal code to buffer
- * @buffer: array of characters
- * @i: index to start appending
- * @ascii_code: ASCII code of the character to append
+ * @buffer: it's the array of characters
+ * @i: it's the index to start appending
+ * @ascii_code: The ASCII code of the character to append
  * Return: 3 always
  */
 int append_hexa_code(char ascii_code, char buffer[], int i)
